@@ -28,3 +28,5 @@ A list (quite disorganized for now) of papers tackling the Bayesian estimation o
 [12]. Markov Chain Monte Carlo Estimation of Stochastic Volatility Models with Finite and Infinite Activity Lévy Jumps, Yang H. (2015).
 
 [13]. Bayesian Estimation of a Stochastic Volatility ModelUsing Option and Spot Prices: Application of a Bivariate Kalman Filter, Catherine S. Forbes, Gael M. Martin and Jill Wright (2004) 
+
+[14]. Bayesian Filtering for Jump-Diffusions with Applications to Stochastic Volatility, Andrew Golightly (2007)
