@@ -30,3 +30,11 @@ A list (quite disorganized for now) of papers tackling the Bayesian estimation o
 [13]. Bayesian Estimation of a Stochastic Volatility ModelUsing Option and Spot Prices: Application of a Bivariate Kalman Filter, Catherine S. Forbes, Gael M. Martin and Jill Wright (2004) 
 
 [14]. Bayesian Filtering for Jump-Diffusions with Applications to Stochastic Volatility, Andrew Golightly (2007)
+
+[15]. Estimating the Parameters of Stochastic Volatility Models using Option Price Data, A. S. Hurn, K. A. Lindsay and A. J. McClelland ()
+
+[16]. Comparing stochastic volatility models through Monte Carlo simulations, Davide Raggia Silvano Bordignon (2005)
+
+[17]. Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics, Katja Ignatieva Paulo J. M. Rodrigues Norman Seeger (2009)
+
+[18]. Estimating Correlated Jumps and Stochastic Volatilities, Jiří Witzany(2011)
