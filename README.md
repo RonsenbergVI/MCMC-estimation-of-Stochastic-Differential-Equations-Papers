@@ -2,7 +2,7 @@
 A list (quite disorganized for now) of papers tackling the Bayesian estimation of Ito processes
 
 
-[1]. MCMC Methods for Continuous-Time Financial Econometrics, Michael Johannes and Nicholas Polson (2003).
+[1]. MCMC Methods for Continuous-Time Financial Econometrics, Michael Johannes and Nicholas Polson (2003). [[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.335.5232&rep=rep1&type=pdf)
 
 [2]. A review on estimation of stochastic differential equations for pharmacokinetic/pharmacodynamic models, Sophie Donnet, Adeline Samson
 (2013).
