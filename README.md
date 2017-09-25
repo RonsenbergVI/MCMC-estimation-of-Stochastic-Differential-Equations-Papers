@@ -1,19 +1,16 @@
 # MCMC-estimation-of-Stochastic-Differential-Equations-Papers
-A list (quite disorganized for now) of papers tackling the Bayesian estimation of Ito processes
+A listof papers tackling the Bayesian estimation of Ito processes
 
 
 ## Econometrics
 
-- **MCMC Methods for Continuous-Time Financial Econometrics**, Michael Johannes and Nicholas Polson (2003). [[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.335.5232&rep=rep1&type=pdf)
-
-- **A review on estimation of stochastic differential equations for pharmacokinetic/pharmacodynamic models**, Sophie Donnet, Adeline Samson
-(2013).
+- **MCMC Methods for Continuous-Time Financial Econometrics**, Johannes, M., and Polson, N. (2003). [[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.335.5232&rep=rep1&type=pdf).
 
 ## Option Pricing
 
-- **Bayesian Estimation of Time-Changed Default Intensity Models** ().
+- **Bayesian Estimation of Time-Changed Default Intensity Models** Gordy, M.B. and Szerszen, P., (2015). [[pdf]](https://pdfs.semanticscholar.org/7ff9/b67151dd8a2cbe1cb76aa6649666a057df62.pdf).
 
-- **Sequential Monte Carlo Methods for Stochastic Volatility Models with Jumps**, Davide Raggi and Silvano Bordignon (2006).
+- **Sequential Monte Carlo Methods for Stochastic Volatility Models with Jumps**, Raggi, D., and Bordignon, S. (2008). [[pdf]](https://www.researchgate.net/profile/Davide_Raggi/publication/252289606_Sequential_Monte_Carlo_Methods_for_Stochastic_Volatility_Models_with_Jumps/links/0c96052a9b537acf4c000000.pdf).
 
 - **Bayesian Estimation of a Stochastic Volatility ModelUsing Option and Spot Prices: Application of a Bivariate Kalman Filter**
 
