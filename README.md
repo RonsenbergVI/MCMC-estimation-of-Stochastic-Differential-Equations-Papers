@@ -14,6 +14,8 @@ A listof papers tackling the Bayesian estimation of Ito processes
 
 - **Consistent non-parametric Bayesian estimation for a time-inhomogeneous Brownian motion Gugushvili**, Shota, and Peter Spreij (2014). [[pdf]](https://arxiv.org/pdf/1304.6536.pdf)
 
+- **Nonparametric Bayesian drift estimation for multidimensional stochastic differential equations**, Gugushvili, S. and Spreij, P. (2014). [[pdf]](https://arxiv.org/pdf/1206.4981.pdf).
+
 ## Derivatives
 
 - **Bayesian Estimation of Time-Changed Default Intensity Models** Gordy, M.B. and Szerszen, P., (2015). [[pdf]](https://pdfs.semanticscholar.org/7ff9/b67151dd8a2cbe1cb76aa6649666a057df62.pdf).
