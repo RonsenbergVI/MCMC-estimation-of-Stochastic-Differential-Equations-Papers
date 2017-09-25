@@ -16,6 +16,8 @@ A listof papers tackling the Bayesian estimation of Ito processes
 
 - **Nonparametric Bayesian drift estimation for multidimensional stochastic differential equations**, Gugushvili, S. and Spreij, P. (2014). [[pdf]](https://arxiv.org/pdf/1206.4981.pdf).
 
+- **Bayesian inference for Stable Levy driven Stochastic Differential Equations with high-frequency data**, Jasra A, Kamatani K, Masuda H. (2017). [[pdf]](https://arxiv.org/pdf/1509.05305.pdf)
+
 ## Derivatives
 
 - **Bayesian Estimation of Time-Changed Default Intensity Models** Gordy, M.B. and Szerszen, P., (2015). [[pdf]](https://pdfs.semanticscholar.org/7ff9/b67151dd8a2cbe1cb76aa6649666a057df62.pdf).
