@@ -1,0 +1,3061 @@
+
+
+
+
+
+
+	
+		
+	
+
+
+
+
+<script language="JavaScript">
+var beforeload = (new Date()).getTime();
+var totalTime = 0;
+var clientTime = 0;
+var serverTime = 0;
+var XmlHttpObj1;
+function Sign(X) { return X>0 ? "+" : X<0 ? "-" : " " }
+function CreateXmlHttpObj1() {
+	try {XmlHttpObj1 = new ActiveXObject("Msxml2.XMLHTTP");}
+	catch(e) {try{XmlHttpObj1 = new ActiveXObject("Microsoft.XMLHTTP");}
+		catch(oc) {XmlHttpObj1 = null;}}
+	if(!XmlHttpObj1 && typeof XMLHttpRequest != "undefined") {XmlHttpObj1 = new XMLHttpRequest();}}
+
+function updateTime() {
+	var sQuery = "abstract%5Fid%3D1363959";
+	var sURL = "%2Fsol3%2Fpapers%2Ecfm";
+	var sNameDom = "papers.ssrn.com";
+	var sIP = "94.192.183.21";
+	var sBrowser = "python-requests/2.18.4";
+	var sProtocol = location.protocol;
+	var requestUrl = sProtocol+ "//"+sNameDom+"/AjaxStatic.cfm?file=updateLoadTime";
+
+	var mydate= new Date();
+	var sTZOffset = mydate.getTimezoneOffset()/60;
+	var getSign = Sign(sTZOffset);
+
+	if (getSign == '-') {sTZOffset = "GMT+ "+ Math.abs(sTZOffset)+":00";}
+	else {if (getSign == '+') {sTZOffset = "GMT- "+ Math.abs(sTZOffset)+":00";}
+	else {sTZOffset = "GMT";}
+	}
+
+	CreateXmlHttpObj1();
+	if(XmlHttpObj1) {
+		XmlHttpObj1.open('POST',requestUrl,false);
+		XmlHttpObj1.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		XmlHttpObj1.send("url1=" + sURL + "&qry=" + sQuery + "&ip=" + sIP + "&zone=" + encodeURIComponent(sTZOffset) + "&ua=" + encodeURIComponent(sBrowser) + "&setime=" + serverTime + "&totime=" + totalTime);
+	}
+}
+
+function loadingTime() {
+	//calculate the current time in afterload
+	var afterload = (new Date()).getTime();
+	//calculate the seconds
+	clientTime = (afterload-beforeload)/1000;
+	serverTime =  parseFloat(document.getElementById("serverTime").innerHTML);
+	totalTime = (clientTime + serverTime).toFixed(3);
+	document.getElementById("loadingtime").innerHTML = "and delivered in " + totalTime + " seconds";
+	updateTime();
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+
+
+	
+
+
+
+ 
+ 
+ 
+
+
+	
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+	 
+ 
+
+ 
+	 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+    
+
+
+
+ 
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+	  
+	  
+  
+
+
+	
+	
+	
+
+	
+		
+			
+		
+		
+			
+		
+		
+			
+				
+			
+		
+	
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics by Katja Ignatieva, Paulo Rodrigues, Norman Seeger :: SSRN</title>
+	
+<meta name="description" content="This paper analyzes exponentially affine and non-affine stochastic volatility models with jumps in returns and volatility. Markov Chain Monte Carlo (MCMC) techn">
+<meta name="keywords" content=" SSRN, Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics, Katja Ignatieva, Paulo Rodrigues, Norman Seeger">
+<meta name="citation_author" content="Ignatieva, Katja">
+<meta name="citation_author" content="Rodrigues, Paulo">
+<meta name="citation_author" content="Seeger, Norman">
+<meta name="citation_title" content="Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics">
+<meta name="citation_online_date" content="2009/03/21">
+
+<meta name="citation_publication_date" content="2009/03/18">
+
+<meta name="citation_doi" content="10.2139/ssrn.1363959">
+<meta name="citation_abstract_html_url" content="https://papers.ssrn.com/abstract=1363959">
+<meta name="citation_keywords" content="Stochastic volatility, Markov Chain Monte Carlo (MCMC), Bayesian inference Deviance information criteria (DIC), Bayes factor">
+<meta name="citation_pdf_url" content="https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=1363959"> 
+
+	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+<meta name='free_download_available' content='true'><meta name='free_download_available' content='true'></head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="new-layout ">
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+		
+
+		
+		
+
+	
+	
+
+
+
+
+	
+	
+
+
+	
+	
+
+
+
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+
+		
+		
+	
+
+	
+
+	
+
+
+
+	
+	
+	
+	
+
+	<script language="javascript">
+		//Language functions
+		function changeLanguage1(language, response){
+
+			$.ajax({
+				url: '/AltLanguage_ajax.cfm?type=changeLanguage&partid=1&strCode=en',
+				cache: false,
+				success: function(data) {
+					// Update values in cookies
+					Set_Cookie('SITEID',language,'-1','/','.ssrn.com','');
+					Set_Cookie('SITEID',language,'1000','/','.ssrn.com','');
+
+					// Finally, perform redirection
+					if (response == 'reload') {
+						window.location.reload();
+					}
+					else {
+						window.location.href=response;
+					}
+				}
+			});
+		}
+
+		function Set_Cookie( name, value, expires, path, domain, secure ) {
+			// set time, its in milliseconds
+			var today = new Date();
+			today.setTime( today.getTime() );
+
+			/*
+			if the expires variable is set, make the correct
+			expires time, the current script below will set
+			it for x number of days, to make it for hours,
+			delete * 24, for minutes, delete * 60 * 24
+			*/
+			if ( expires ) {
+				expires = expires * 1000 * 60 * 60 * 24;
+			}
+
+			var expires_date = new Date( today.getTime() + (expires) );
+
+			document.cookie = name + "=" +escape( value ) +
+			( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+			( ( path ) ? ";path=" + path : "" ) +
+			( ( domain ) ? ";domain=" + domain : "" ) +
+			( ( secure ) ? ";secure" : "" );
+		}
+
+
+		/*
+		* We use this function when the language should be stripped from an object, like a form RADIO
+		*/
+		function getLanguage ( oObj ) {
+			var specialChars = "!@#$^&%*()+=-[]\/{}|:<>?,.";
+
+			// Need to clean up code if object came from Mura site.
+			sCode = oObj.value;
+			if (sCode.length > 2) {
+				for (var i = 0; i < specialChars.length; i++) {
+					sCode = sCode.replace(new RegExp("\\" + specialChars[i], 'gi'), '');
+				}
+				// After cleaning up special chars, we take the first two chars.
+				sCode = sCode.substring(0,2).trim();
+			}
+
+			return sCode;
+		}
+	</script>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://static.ssrn.com/cfincludes/css/custom-bootstrap.min.css?v=158">
+<link rel="stylesheet" type="text/css" href="https://static.ssrn.com/cfincludes/css/custom.min.css?v=158">
+
+<div class="accesibility-link">
+	<a id="skip-to-content" title="Skip to content" href="#maincontent">Skip to main content</a>
+</div>
+
+<!--HEADER-->
+<div id="headerId" class="header-integration">
+	<div class="header-redesigned">
+		<div class="container">
+			<div class="header-left">
+				<a class="logo-ssrn" href="https://www.ssrn.com">
+					
+						<img class="logo-ssrn-img" src="https://static.ssrn.com/cfincludes/img/ssrn-logo.png" alt="SSRN logo">
+					
+				</a>
+			</div>
+			
+				<div class="header-left">
+					<nav class="menu-main mo-nav">
+						<div class="mo-nav-header">
+							<button class="mo-nav-search-btn" aria-label="Display Searh Form"><i class="icon-gizmo-search" aria-hidden="true"></i></button>
+							<button class="mo-nav-close-btn" aria-label="Close menu"><i class="icon-gizmo-delete" aria-hidden="true"></i></button>
+						</div>
+						<div class="menu-search header-search">
+							<div class="container">
+								<div class="row">
+									<div class="header-search-left">
+										<form class="header-search-form" id="searchForm1" action="https://papers.ssrn.com/sol3/results.cfm" method="post" target="_top" name="formQuickSearch">
+											<i class="icon icon-gizmo-search" role="button" aria-label="Search eLibrary"></i>
+											<input type="text" class="header-search-input" aria-label="Search eLibrary" placeholder="Search eLibrary" name="txtKey_Words" id="txtKeywords" required>
+											<input type="hidden" name="isQuickSearch" value="true">
+										</form>
+									</div>
+									<div class="header-search-right">
+										<a href="https://papers.ssrn.com/sol3/DisplayAbstractSearch.cfm">Advanced</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li><a href="https://papers.ssrn.com/sol3/DisplayJournalBrowse.cfm">Browse</a></li>
+							<li><a href="https://www.ssrn.com/en/index.cfm/subscribe/">Subscriptions</a></li>
+							<li class="has-sub-menu">
+								<a href="javascript:void(0);" role="button">Rankings</a>
+								<ul class="sub-menu">
+									<li><a href="https://hq.ssrn.com/rankings/Ranking_display.cfm?TRN_gID=10" id="topPapesLink">Top Papers</a></li>
+									<li><a href="https://www.ssrn.com/en/index.cfm/top-authors/">Top Authors</a></li>
+									<li><a href="https://www.ssrn.com/en/index.cfm/top-organizations/">Top Organizations</a></li>
+								</ul>
+							</li>
+							<li><a href="https://hq.ssrn.com/submissions/CreateNewAbstract.cfm" id="submitPaperLink">Submit a paper</a></li>
+							<li><a href="https://hq.ssrn.com/Library/myLibrary.cfm" title="formerly My Briefcase" target="_blank">My Library</a></li>
+							<li><a href="http://ssrnblog.com" target="_blank">Blog</a></li>
+							<li class="register-link" ><a href="https://hq.ssrn.com/login/pubsigninjoin.cfm">Register now <i class="icon icon-gizmo-navigate-right"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			
+			<div class="header-right">
+				
+					<a class="shopping-cart-btn" aria-label="Shopping Cart" href="https://papers.ssrn.com/sol3/ShoppingCart.cfm">
+						<i class="icon icon-gizmo-shopping-cart" aria-label="Shopping Cart" aria-hidden="true"></i>
+					</a>
+					<a class="search-btn" aria-label="Search eLibrary" href="https://papers.ssrn.com/sol3/DisplayAbstractSearch.cfm"> 
+						<i class="icon icon-gizmo-search" role="button" aria-label="Search eLibrary"></i>
+					</a>
+				
+				
+					
+						<div class="blue-buttons">
+							<a id="btnRegister" class="btn-blue header-signin-btn" href="https://hq.ssrn.com/login/pubsigninjoin.cfm"  >REGISTER</a>
+							<button id="btnSignin" class="btn-blue header-signin-btn" >SIGN IN</button>
+						</div>
+						
+						<div class="header-tooltip signin-tooltip loginBox mo-nav" role="form">
+							<div class="mo-nav-header">
+								<button class="mo-nav-close-btn" aria-label="Close Sign In"><i class="icon-gizmo-delete" aria-hidden="true"></i></button>
+							</div>
+							<div class="tooltip-bg"></div>
+							<div class="tooltip-container">
+								<div class="input-tag">Email</div>
+								<input type="text" id="txtLogin" class="signin-input username-inp" aria-label="Email" />
+								<div class="error_show_login">This field is required</div>
+								<div class="input-tag">Password</div>
+								<input type="password" id="txtPasswordLogin" class="signin-input password-inp" aria-label="Password" />
+								<div class="error_show_pass">This field is required</div>
+								<div id="errorMessageLogin"></div>
+								<button id="signin" class="btn-orange signin-btn">Sign in</button>
+								<div class="remember-me">
+									<input type="checkbox" name="remember-me-check" class="remember-me-check" aria-labelledby="remember-me-label" />
+									<span id="remember-me-label">Remember me</span>
+								</div>
+								<a href="https://hq.ssrn.com/login/passwordAssistance.cfm?userEmail=&rootPage=signIn" class="forgot-link">Forgot ID or Password?</a>
+								<div class="clear"></div>
+								<a href="https://hq.ssrn.com/login/pubsigninjoin.cfm" class="register-link">Register now <i class="icon icon-gizmo-navigate-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					
+				
+				<button id="profile" class="user-container" style='display:none;' >
+					<div id="name-header" class="user-name"><div class="user-name-overflow">Public User</div></div>
+					<div id="user-icon-btn" class="user-icon-btn"><i class="icon icon-gizmo-person" aria-hidden="true"></i></div>
+				</button>
+				<div class="header-tooltip user-tooltip profileMenu mo-nav" aria-haspopup="true" role="menu">
+					<div class="mo-nav-header">
+						<div id="name-mo-header" class="mo-nav-username">Public User</div>
+						<i class="icon icon-gizmo-person" aria-hidden="true"></i>
+						<button class="mo-nav-close-btn" aria-label="Close menu"><i class="icon-gizmo-delete" aria-hidden="true"></i></button>
+					</div>
+					<div class="tooltip-bg"></div>
+					<div class="tooltip-container">
+						<ul class="profile-in">
+							<li class="mo-list-title visible-xs-block"><strong>Your Account</strong></li>
+							
+								<li><a id="userhome" href="https://hq.ssrn.com/UserHome.cfm">User Home</a></li>
+								<li><a id="personal" href="https://hq.ssrn.com/Participant.cfm?rectype=edit&partid=1&perinf=y">Personal Info</a></li>
+								<li><a id="affil" href="https://hq.ssrn.com/Affiliations/AffiliationList.cfm?partid=1">Affiliations</a></li>
+								<li><a id="suscr" href="https://hq.ssrn.com/Subscriptions.cfm?partId=1">Subscriptions</a></li>
+								<li><a id="mypapers" href="https://hq.ssrn.com/submissions/MyPapers.cfm?partid=1">My Papers</a></li>
+								<li>
+									
+										<a href="https://hq.ssrn.com/Library/myLibrary.cfm">My Library</a>
+									
+								</li>
+								
+									<li class="signin-link">
+										<a href="https://hq.ssrn.com/SignOut.cfm?proc=notme">
+											<i class="icon icon-gizmo-log-out" aria-hidden="true"></i>
+											Sign out
+										</a>
+									</li>
+								
+							
+							
+						</ul>
+					</div>
+				</div>
+				<button id="btnMenu" type="button" class="header-menu-btn" aria-label="Open Menu" aria-expanded="false">
+					<i class="icon icon-nav-menu" aria-hidden="true"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--SEARCH HEADER START-->
+
+	<div class="header-search">
+		<div class="container">
+			<div class="row">
+				<div class="header-search-left">
+					<form class="header-search-form" id="searchForm1" role="Search eLibrary" action="https://papers.ssrn.com/sol3/results.cfm" method="post" target="_top" name="formQuickSearch">
+						<i class="icon icon-gizmo-search" role="button" aria-label="Search eLibrary"></i>
+						<input type="text" class="header-search-input" aria-label="Search eLibrary" placeholder="Search eLibrary" name="txtKey_Words" id="txtKeywords" required>
+						<input type="hidden" name="isQuickSearch" value="true">
+					</form>
+				</div>
+				<div class="header-search-right">
+					<a href="https://papers.ssrn.com/sol3/DisplayAbstractSearch.cfm" >Advanced Search</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--SEARCH HEADER END-->
+<!--END HEADER-->
+
+
+
+	
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">if(typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='https://#strStaticServer#/libraries/JQuery/v1.12.4/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+}</script>
+
+
+<script>
+	function sentEmailValidation(lngLoginID, forwardURL){
+		var parameters = {
+			"lngLoginID" : lngLoginID,
+			"strForwardURL" : forwardURL
+		};
+		$.ajax({
+			type: "POST",
+			url: "https://static.ssrn.com/cfc/webServices/loginServices.cfc?method=sentValidationEmailNew",
+			data: parameters,
+			dataType: "jsonp",
+			async: false,
+			success: function(data) {
+				if(data.RESULT == 1){
+					$("#errorMessageLogin").html(data.MESSAGE);
+				}
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(textStatus, errorThrown);
+			}
+		});
+	};
+</script>
+<script>
+$( document ).ready(function() {
+
+	// Show translation notice on footer on load
+	var hebrewIsSelected = $('.dropdown-lang option:last-child').is(':selected'),
+			$body = $('body'),
+			$loginBox = $('.loginBox'),
+			$menuMain = $('.menu-main'),
+			$profileMenu = $('.profileMenu');
+
+	if (hebrewIsSelected) {
+		toggleTranslationNote();
+	}
+
+	/* dropdown user*/
+	$('#btnSignin').click(function(e) {
+		e.preventDefault();
+		pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'ssrn-header:sign-in-or-register'}});
+		$("#txtLogin").val("");
+		$("#txtPasswordLogin").val("");
+		$("#errorMessageLogin").hide();
+		$("#error_show_login").hide();
+		$("#error_show_pass").hide();
+		$(".menu-main .register-link").hide();
+		$loginBox.toggleClass('open');
+		$body.toggleClass('nav-is-open');
+	});
+
+	
+	$('#btnRegister').on('click', function() {
+		pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'ssrn-header:register'}});
+	});
+
+	$('#topPapesLink').on('click', function() {
+		pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'rankings-top-papers'}});
+	});
+
+	$('#submitPaperLink').on('click', function() {
+		pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'ssrn-header:submit-article'}});
+	});
+
+	$('#btnMenu').on('click', function() {
+		$body.addClass('nav-is-open');
+		$menuMain.addClass('open');
+	});
+
+	$('.mo-nav-close-btn').on('click', function() {
+		$body.removeClass('nav-is-open');
+		$(this).closest('.mo-nav').removeClass('open');
+	});
+
+	$('.mo-nav-search-btn').on('click', function() {
+		$menuMain.find('.menu-search').toggleClass('open');
+	});
+
+	
+	
+	$(document).on('click','#profile', function(e){
+		e.preventDefault();
+		$body.toggleClass('nav-is-open');
+		$profileMenu.toggleClass('open');
+	});
+	
+
+	/* Cleaning the email text*/
+	$('#txtLogin').bind("change keyup input",function() {
+		$(".error_show_login").hide();
+		$("#txtLogin").removeClass("loginError");
+		$("#errorMessageLogin").hide();
+	});
+
+	/* Cleaning the password text*/
+	$('.password-inp').bind("change keyup input",function() {
+		$(".error_show_pass").hide();
+		$("#txtPasswordLogin").removeClass("loginError");
+		$("#errorMessageLogin").hide();
+	});
+
+	/*Function for encrypt*/
+	function encrypt(key1, key2, key3){
+		var key = btoa(key1 + "|" + key2 + "|" + key3);
+		return key;
+	};
+
+	
+	function validateFields (){
+		var emptyLogin = false;
+		var emptyPass = false;
+
+		if(document.getElementById("txtLogin") == null || document.getElementById("txtLogin").value == "")
+		{
+		$("#txtLogin").addClass('loginError');
+		$(".error_show_login").show();
+		emptyLogin = true;
+		}
+		if(document.getElementById("txtPasswordLogin") == null || document.getElementById("txtPasswordLogin").value == "" )
+		{
+			$("#txtPasswordLogin").addClass('loginError');
+			$(".error_show_pass").show();
+			emptyPass = true;
+		}
+		if(emptyLogin == true || emptyPass == true){
+			return false;
+		}
+		return true;
+	};
+
+	
+	$('.password-inp').keypress(function(event) {
+		if (event.keyCode == 13 || event.which == 13) {
+			event.preventDefault();
+			login();
+		}
+	});
+
+	
+	$('#txtLogin').keypress(function(event) {
+		if (event.keyCode == 13 || event.which == 13) {
+			event.preventDefault();
+			login();
+		}
+	});
+
+	
+	$("#signin").click(function() {
+		login();
+	});
+
+	
+	function login(){
+		if (validateFields() != false) {
+			var user = document.getElementById("txtLogin").value;
+			var pass = document.getElementById("txtPasswordLogin").value;
+			var remember = $('.remember-me-check').prop('checked');
+			var keyUser = encrypt(user, pass, remember);
+			var parameters = {
+				"key" : keyUser
+			};
+			$.ajax({
+				type: "POST",
+				url: "https://static.ssrn.com/cfc/webServices/loginServices.cfc?method=signinService",
+				data: parameters,
+				dataType: "jsonp",
+				async: false,
+				success: function(data) {
+					if(data.ILOGINRESULT == 0) {
+						var lngPartLogedIn = data.USER.PART_ID;
+						buildmenu(lngPartLogedIn);
+						$("#name-header div.user-name-overflow").text(data.USER.FULLNAME);
+						$("#name-mo-header").text(data.USER.FULLNAME);
+						$('#profile').show();
+						$("#btnSignin").hide();
+						$("#btnRegister").hide();
+						$loginBox.removeClass('open');
+						$body.removeClass('nav-is-open');
+						
+						pageData.visitor.loginSuccess = "true";
+						pageData.visitor.loginStatus = "logged in";
+						pageData.visitor.accessType = "ss:registered-user";
+						pageData.visitor.userId = data.USER.ENCRYPT_PART_ID;
+						pageDataTracker.trackEvent( 'newPage' , pageData);
+						
+					} else {
+						
+						pageData.visitor.loginSuccess = "false";
+						pageDataTracker.trackEvent( 'newPage' , pageData);
+						
+						$("#errorMessageLogin").html(data.MESSAGETOSHOW);
+						$("#errorMessageLogin").show();
+					}
+				}
+			});
+		} else {
+			return false;
+		};
+	};
+
+	
+	function buildmenu(lngPartLogedIn){
+		$("#personal").attr("href", "https://hq.ssrn.com/Participant.cfm?rectype=edit&partid=" + lngPartLogedIn + "&perinf=y");
+		$("#affil").attr("href", "https://hq.ssrn.com/Affiliations/AffiliationList.cfm?partid=" + lngPartLogedIn);
+		$("#suscr").attr("href", "https://hq.ssrn.com/Subscriptions.cfm?partId=" + lngPartLogedIn);
+		$("#mypapers").attr("href", "https://hq.ssrn.com/submissions/MyPapers.cfm?partid=" + lngPartLogedIn);
+	};
+
+	
+	$(document).click(function(event) {
+		if(!$(event.target).closest('.header-tooltip').length && $(event.target)[0] != $('#btnSignin')[0] && $(event.target)[0] != $('#profile')[0] ) {
+			if($('.header-tooltip').is(":visible") && $('.mo-nav-header').is(":hidden")) {
+				$body.removeClass('nav-is-open');
+				$('.header-tooltip').removeClass('open');
+			}
+		}
+
+		// Makes the submenu links accesible by keyboard
+		$('.has-sub-menu a')
+			.focus(function() {
+				$(this).parents("li").addClass("focus");
+			})
+			.blur(function() {
+				$(this).parents("li").removeClass("focus");
+			});
+	});
+
+	// Show translation notice on change
+	$('.dropdown-lang').on('change', function() {
+		toggleTranslationNote();
+	});
+
+	// Accordion functionality on Footer MO
+	var $collapseBtn = $('h4[data-toggle="collapse"]'),
+			$collapsableContent = $('.collapsable');
+
+	$collapseBtn.on('click', function(){
+		var $this = $(this),
+				$parent = $this.parent(),
+				$thisCollapsable = $parent.find('.collapsable');
+
+		$collapsableContent.slideUp('fast');
+
+		if ( !$thisCollapsable.is(":visible") ) {
+			$thisCollapsable.slideDown('fast');
+		}
+	});
+
+	// Show translation notice on footer
+	function toggleTranslationNote() {
+		$('.translation-notice').toggle();
+	}
+});
+
+	//Language function
+	function changeLanguage(lang){
+        var curretUrl = window.location.href;
+        if(curretUrl.indexOf('&lng') != -1) {
+            var new_url = curretUrl.substring(0, curretUrl.indexOf('&lng'));
+        }else{
+            var new_url = window.location.href;
+        }
+        window.location.href=new_url+'&lng='+lang;
+    }
+</script>
+
+
+	<!-- new css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="https://static.ssrn.com/cfincludes/css/custom.min.css?v=158">
+
+	<!-- new abstract css -->
+	<link rel="stylesheet" type="text/css" href="https://static.ssrn.com/cfincludes/css/abstract.min.css?v=158">
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+			
+
+
+
+
+
+			
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+	
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+	
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="genericToastr" class="generic-toastr">
+	<div class="toastr-icon">
+		<i id="toastrIcon"></i>
+	</div>
+	<div id="toastrMessage" class="toastr-mesage"></div>
+	<div class="toastr-close">
+		<i class="icon icon-gizmo-delete" onclick="closeToastr()"></i>
+	</div>
+	<div class="toastr-link"><a id="toastrLink" href="#"></a></div>
+</div>
+
+
+
+ 
+
+
+
+	<div class="container abstract-body" id="maincontent">
+		<div class="row">
+			<div class="col-sm-8 abstract-main-col">
+				
+				 
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+ 
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+<div class="abstract-top-buttons ">
+	
+		
+			
+			
+			
+			
+				
+				
+					<a href="Delivery.cfm/SSRN_ID1410200_code495537.pdf?abstractid=1363959&mirid=1" data-abstract-id="1363959" data-abstract-title="Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics" id="downloadPdf" class="btn-orange btn-view-pdf download-button" title="Download Full-Text Paper">Download This Paper</a>	
+				
+
+				
+				
+					
+					
+						<a href="Delivery.cfm/SSRN_ID1410200_code495537.pdf?abstractid=1363959&mirid=1&type=2" data-abstract-title="Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics" id="viewPdf" title="Open Full-Text Paper in Browser" class="btn-blue-outline-third btn-download-pdf">
+						Open PDF in Browser
+						</a>
+					
+				
+			
+			
+		
+	
+
+	
+	
+	
+	
+		
+		
+		
+		
+			<div class="star-container">
+				
+					
+				
+				<a href="#" aria-label="Add to your Library" aria-pressed="false" role="button">
+					<i class="icon icon-gizmo-star-outline" data-user-id="1" data-abstract-id="1363959" data-abstract-url="static.ssrn.com" data-abstract-auth="false"></i>
+					<span>Add Paper to My Library</span>
+				</a>
+			</div>
+		
+	
+	 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+
+ 
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+				
+			</div>
+			<div class="col-sm-4 abstract-side-col">
+				
+				
+				
+					<div class="share-container">
+						Share:
+						<ul class="list-unstyled ">
+							<li><a class="addthis_button_facebook" aria-label="Share on Facebook" role="button"><i class="icon icon-social-facebook" aria-hidden="true"></i></a></li>
+							<li><a class="addthis_button_twitter" aria-label="Share on Twitter" role="button"><i class="icon icon-social-twitter" aria-hidden="true"></i></a></li>
+							<li><a class="addthis_button_citeulike" aria-label="Share on CiteULike" role="button"><i class="icon icon-social-citeulike" aria-hidden="true"></i></a></li>
+							
+							<li><a id="socialEmail" href="#" onClick='window.open("Email_Friend.cfm?abid=1363959","Email_Friend","toolbar=no,menubar=no,scrollbars=yes,resizable=yes,width=740,height=600")' aria-label="Share by Email" role="button"><i class="icon icon-gizmo-email" aria-hidden="true"></i></a></li>
+							
+							<li><a id="permalink" href="#" aria-label="Get Permalink" role="button"><i class="icon icon-gizmo-link" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fb149d9407dcd4b"></script>
+					<script type="text/javascript">
+						var paperTitle = "Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics";
+						var addthis_share = addthis_share || {};
+						addthis_share = {
+							passthrough : {
+								twitter: {
+									text: paperTitle + " @SSRN"
+								}
+							}
+						}
+
+						function trackEventSocial(platform){
+							pageDataTracker.trackEvent('socialShare', {
+								social: {
+									sharePlatform : platform
+								}
+							});
+						};
+
+						$('.addthis_button_facebook').click(function(e) {
+							trackEventSocial('Facebook');
+						});
+
+						$('.addthis_button_twitter').click(function(e) {
+							trackEventSocial('Twitter');
+						});
+
+						$('.addthis_button_citeulike').click(function(e) {
+							trackEventSocial('CiteULike');
+						});
+
+						$('#socialEmail').click(function(e) {
+							trackEventSocial('Email');
+						});
+
+						$('#permalink').click(function(e) {
+							trackEventSocial('Permalink');
+						});
+
+					</script>
+				
+				
+				
+				<div class="permalink-tooltip">
+					<div class="tooltip-bg"></div>
+					<div class="tooltip-container">
+					<div class="permalink-title">Permalink</div>
+						<div class="permalink-description">Using the URL or DOI link below will ensure access to this page indefinitely</div>
+						<div class="permalink-url">
+							<input type="text" id="parmalinkURL" readonly class="permalink-input" value="https://ssrn.com/abstract=1363959">
+							<a href="#" id="copyURL" class="btn-blue-outline btn-blue-outline-copy">Copy URL</a>
+						</div>
+						<div class="permalink-doi">
+							<input type="text" id="parmalinkDOI" readonly class="permalink-input" value="https://dx.doi.org/10.2139/ssrn.1363959">
+							<a href="#" id="copyDOI" class="btn-blue-outline btn-blue-outline-copy">Copy URL</a>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 abstract-main-col">
+				
+				
+<div class="box-container box-abstract-main">
+	
+	
+		
+	
+
+	
+	
+		
+		
+	
+	<h1>Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics</h1>
+	
+	<div class="reference-info">
+		
+		
+
+
+	</div>
+
+	
+	<p class="note note-list">
+		
+		
+			<span>42 Pages</span>
+		
+		
+
+		<span>Posted: 21 Mar 2009</span>
+		
+			<span>Last revised: 28 May 2009</span>
+		
+				
+	</p>
+
+	<div class="authors">
+		
+		
+
+
+
+
+	<h2><A HREF=https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1025140 target='_blank' title='View other papers by this author'>Katja Ignatieva</a></h2><p>University of New South Wales - Australian School of Business</p><h2><A HREF=https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1208200 target='_blank' title='View other papers by this author'>Paulo Rodrigues</a></h2><p>Maastricht University - Department of Finance</p><h2><A HREF=https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=495537 target='_blank' title='View other papers by this author'>Norman Seeger</a></h2><p>VU University Amsterdam</p>
+
+	</div>
+
+	
+	
+	
+	
+
+
+	
+	<p>
+		<a class="btn-link versions-btn" tabindex="0" role="button" aria-label="Open tooltip with 2 versions of this paper" >
+			<img src="https://static.ssrn.com/cfincludes/img/icons/icon-small-multipleversion.png" alt="Multiple version icon">There are <span>2</span> versions of this paper
+		</a>
+	</p>
+
+	<div class="tooltip bottom-left versions-tooltip" role="tooltip" id="versions-tooltip">
+		<i class="icon-gizmo-delete tooltip-close" aria-label="Close modal" title="Close modal" role="button" tabindex="0" onkeypress="return closeTooltip(event)"></i>
+		<div class="tooltip-arrow"></div>
+		<div class="tooltip-inner">
+			<div class="table papers-list">
+				<div class="tbody">
+
+				
+					
+
+					<div class="trow">
+						<div class="actions">
+							<a title="Free paper" href="javascript:void(0);" role="button" ><i class="icn icn-free" aria-hidden="true"></i></a>
+						</div>
+						<div class="description">
+							
+								
+									<h3><a class="title optClickTitle" href="https://ssrn.com/abstract=1344226" tabindex="0"><span>Empirical Analysis of Affine vs. Non-Affine Variance Specifications in Jump-Diffusion Models for Equity Indices</span>
+									</a></h3>
+								
+							
+							
+							<div class="reference">
+								Seeger, N.J., Rodrigues, P.J.M. & Ignatieva, K. (2015). Empirical Analysis of Affine vs. Nonaffine Variance Specifications in Jump-Diffusion Models for Equity Indices. Journal of Business and Economic Statistics, 33(1), 68-75. 10.1080/07350015.2014.922471
+							</div>
+							
+							<div class="note note-list">
+								
+									<span>Number of pages: 49</span>
+								
+								
+									<span tabindex="0">Posted: 16 Feb 2009</span>
+								
+								
+									<span>Last Revised: 13 Feb 2015</span>
+								
+							</div>
+							
+						</div>
+						<div class="downloads">
+							
+							<span>Downloads</span>
+							<span>  242</span>
+							
+						</div>
+					</div>
+					
+					
+
+					<div class="trow">
+						<div class="actions">
+							<a title="Free paper" href="javascript:void(0);" role="button" ><i class="icn icn-free" aria-hidden="true"></i></a>
+						</div>
+						<div class="description">
+							
+								
+									<h3 tabindex="0"><span class="title optClickTitle no-underline">Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics</span></h3>
+								
+							
+							
+							<div class="note note-list">
+								
+									<span>Number of pages: 42</span>
+								
+								
+									<span tabindex="0">Posted: 21 Mar 2009</span>
+								
+								
+									<span>Last Revised: 28 May 2009</span>
+								
+							</div>
+							
+							<div class="current">
+								<i class="icon-gizmo-eye"></i>
+								<span>You are currently viewing this paper</span>
+							</div>
+							
+						</div>
+						<div class="downloads">
+							
+							<span>Downloads</span>
+							<span>   96</span>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	
+	
+	
+	
+		
+		
+	
+	
+		<p>Date Written: March 18, 2009</p>
+	
+
+	
+	
+		
+		
+		
+		
+		
+	
+
+	
+	
+		
+	
+	<div class="abstract-text">
+		<h3>Abstract</h3>
+		<p>This paper analyzes exponentially affine and non-affine stochastic volatility models with jumps in returns and volatility. Markov Chain Monte Carlo (MCMC) technique is applied within a Bayesian inference to estimate model parameters and latent variables using daily returns from the S&P 500 stock index. There are two approaches to overcome the problem of misspecification of the square root stochastic volatility model. The first approach proposed by Christoersen, Jacobs and Mimouni (2008) suggests to investigate some non-affine alternatives of the volatility process. The second approach consists in examining more heavily parametrized models by adding jumps to the return and possibly to the volatility process. The aim of this paper is to combine both model frameworks and to test whether the class of affine models is outperformed by the class of non-affine models if we include jumps into the stochastic processes. We conclude that the non-affine model structure have promising statistical properties and are worth further investigations. Further, we find affine models with jump components that perform similar to the non affine models without jump components. Since non affine models yield economically unrealistic parameter estimates, and research is rather developed for the affine model structures we have a tendency to prefer the affine jump diffusion models. <P></p>
+	</div>
+	
+
+	<center>
+		
+		
+
+
+	
+
+	
+	
+
+		
+		
+
+	
+	
+
+
+	</center>
+
+	
+	
+	
+		
+	
+	
+	
+
+	
+	
+		
+		
+			
+				
+			
+		
+		<p><strong>Keywords:</strong> Stochastic volatility, Markov Chain Monte Carlo (MCMC), Bayesian inference Deviance information criteria (DIC), Bayes factor</p>
+	
+	
+
+			
+
+	
+	
+		<p><strong>JEL Classification:</strong> G11, G12</p>
+	
+	
+
+	
+	
+
+	
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	
+	
+	
+	
+   	
+	
+	
+	
+	
+	            
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+    
+
+	
+
+
+	<p>
+		<strong class="hidden-xs hidden-sm">Suggested Citation:</strong>
+		<a href="#" class="suggested-citation-btn btn-link visible-xs visible-sm">Suggested Citation<i class="icon icon-gizmo-navigate-right"></i></a>
+	</p>
+
+	<div id="selectable" onclick="selectText('selectable')" class="suggested-citation">
+		
+			Ignatieva, Katja and Rodrigues, Paulo and Seeger, Norman, Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics (March 18, 2009).  Available at SSRN: <a href="https://ssrn.com/abstract=1363959"  target="_blank">https://ssrn.com/abstract=1363959</a> or <a href="https://dx.doi.org/10.2139/ssrn.1363959" class="textlink" target="_blank">http://dx.doi.org/10.2139/ssrn.1363959 </a>
+		
+	</div>
+	
+
+	<a href="#" class="show-contact-btn btn-link" role="button" aria-label="Show contact information">
+		<span aria-hidden="true"></span><i class="icon icon-gizmo-navigate-right" aria-hidden="true"></i>
+	</a>
+
+	
+	<div class="contact-information">
+		
+
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+        
+		
+
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="author">
+
+		
+
+		
+
+		
+		
+		
+
+		
+		
+			
+				
+					
+						<h3><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1025140" target='_blank'>Katja Ignatieva</a></h3>
+					
+			
+		
+
+		
+		
+		
+		
+
+		
+		<div class="block-quote">
+			
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						
+					
+					<a href="http://www.business.unsw.edu.au"  target="_blank"><img class="logo" src="https://papers.ssrn.com/Organizations/OrgBrandings/304612_11762.gif"  alt="University of New South Wales - Australian School of Business"></a>
+				
+			
+
+			
+				
+				
+				
+					
+					
+					
+					
+				
+					
+					
+					
+						
+					
+				
+			
+
+			
+				<h4>University of New South Wales - Australian School of Business  ( <a href="javascript:void(0)" onClick="pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'article-page:email'}});window.open('GetAuthorEmail.cfm?abid=1363959&pag=papers','Author_Email','toolbar=no,menubar=no,scrollbars=yes,resizable=no,width=700,height=470')">email</a> )</h4>
+			
+
+			
+			
+				
+				
+				<p>
+					<span>Sydney, NSW 2052<br>Australia<br></span>
+				</p>
+				
+			
+
+			
+
+		</div>
+		
+	</div>
+	
+
+	
+	<div class="author">
+
+		
+
+		
+
+		
+		
+		
+
+		
+		
+			
+				
+					
+						<h3><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1208200" target='_blank'>Paulo Rodrigues</a></h3>
+					
+			
+		
+
+		
+		
+		
+		
+
+		
+		<div class="block-quote">
+			
+				
+			
+
+			
+				
+				
+				
+					
+					
+					
+					
+				
+					
+					
+					
+						
+					
+				
+			
+
+			
+				
+				
+				
+
+
+				<h4>Maastricht University - Department of Finance  ( <a href="javascript:void(0)" onClick="pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'article-page:email'}});window.open('GetAuthorEmail.cfm?abid=1363959&pag=papers','Author_Email','toolbar=no,menubar=no,scrollbars=yes,resizable=no,width=700,height=470')">email</a> )</h4>
+			
+
+			
+			
+				
+				
+				<p>
+					<span>Maastricht, 6200 MD<br>Netherlands<br></span>
+				</p>
+				
+			
+
+			
+
+		</div>
+		
+	</div>
+	
+
+	
+	<div class="author">
+
+		
+
+		
+
+		
+		
+		
+
+		
+		
+			
+				
+					
+						<h3><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=495537" target='_blank'>Norman Seeger (Contact Author)</a></h3>
+					
+			
+		
+
+		
+		
+		
+		
+
+		
+		<div class="block-quote">
+			
+				
+			
+
+			
+				
+				
+				
+					
+					
+					
+					
+				
+					
+					
+					
+						
+					
+				
+			
+
+			
+				<h4>VU University Amsterdam  ( <a href="javascript:void(0)" onClick="pageDataTracker.trackEvent('conversionDriverClick', {conversionDriver:{name : 'article-page:email'}});window.open('GetAuthorEmail.cfm?abid=1363959&pag=papers','Author_Email','toolbar=no,menubar=no,scrollbars=yes,resizable=no,width=700,height=470')">email</a> )</h4>
+			
+
+			
+			
+				
+				
+				<p>
+					<span>De Boelelaan 1105<br>Amsterdam, 1081 HV<br>Netherlands<br>+31 20 598 1512 (Phone)<br></span>
+				</p>
+				
+			
+
+			
+				
+				<p>
+					<span>HOME PAGE: <a href="http://www.norman-seeger.com" target="HOMEPAGE" title="http://www.norman-seeger.com">http://www.norman-seeger.com</a></span>
+				</p>
+			
+
+		</div>
+		
+	</div>
+	
+
+
+
+
+
+	</div>
+	
+
+</div>
+				 
+				
+				 
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+ 
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+<div class="abstract-top-buttons abstract-bottom-buttons">
+	
+		
+			
+			
+			
+			
+				
+				
+					<a href="Delivery.cfm/SSRN_ID1410200_code495537.pdf?abstractid=1363959&mirid=1" data-abstract-id="1363959" data-abstract-title="Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics" id="downloadPdf" class="btn-orange btn-view-pdf download-button" title="Download Full-Text Paper">Download This Paper</a>	
+				
+
+				
+				
+					
+					
+						<a href="Delivery.cfm/SSRN_ID1410200_code495537.pdf?abstractid=1363959&mirid=1&type=2" data-abstract-title="Stochastic Volatility and Jumps: Exponentially Affine Yes or No? An Empirical Analysis of S&P500 Dynamics" id="viewPdf" title="Open Full-Text Paper in Browser" class="btn-blue-outline-third btn-download-pdf">
+						Open PDF in Browser
+						</a>
+					
+				
+			
+			
+		
+	
+
+	
+	
+	
+	
+	 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+
+ 
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+			</div>
+
+			<div class="col-sm-4 abstract-side-col">
+				
+					<div class="row">
+						
+						
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	    
+
+
+
+
+
+
+
+<div class="box-container box-registration-call-out">
+	<h2 class="section-title">Register to save articles to<br>your library</h2>
+	<dl class="stats row">
+		<a href="https://hq.ssrn.com/login/pubsigninjoin.cfm" class="btn-orange" title="Register">Register</a>
+	</dl>
+</div>
+
+					</div>
+				
+				<div class="row">
+					
+					
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+<div class="box-container box-paper-statics">
+	<h2 class="section-title">Paper statistics</h2>
+	<dl class="stats row">
+		
+		
+			 
+			<div class="stat col-lg-6">
+				<div class="lbl">Downloads</div>
+				<div class="number" title="">       96</div>
+			</div>
+			
+		
+
+		
+		 
+		<div class="stat col-lg-6">
+			<div title="SSRN compiles rankings of Papers in our system
+based on a number of measures,
+such as downloads and citations.
+To be ranked, a paper must be a publicly available
+scholarly full-text paper on SSRN.
+Privately available papers
+are not considered in these rankings."
+			class="lbl">rank</div>
+			
+			<div class="number" title="">    79,309</div>
+		</div>
+		
+		
+		
+			<div class="stat col-lg-6">
+				<div class="lbl">Abstract Views</div>
+				<div class="number" title="">      653</div>
+			</div>
+			<div class="stat plumx col-lg-6">
+				<div class="lbl">PlumX</div>
+				<div class="hidden-xs">
+					<a href="https://plu.mx/ssrn/a/?ssrn_id=1363959" class="plumx-plum-print-popup" data-popup="left" data-hide-when-empty="false" data-site="ssrn" data-hide-usage="true" data-badge="false"></a>
+				</div>
+				<div class="visible-xs">
+					<a href="https://plu.mx/ssrn/a/?ssrn_id=1363959" class="plumx-plum-print-popup" data-popup="right" data-hide-when-empty="false" data-site="ssrn" data-hide-usage="true" data-badge="false"></a>
+				</div>
+				
+			</div>
+		
+		
+	</dl>
+	
+		
+			<div class="references-citations">
+					
+					
+					<a onclick="trackEventsArticle('../sol3/CiteReader_OUT.cfm?abid=1363959', 'references');" href="javascript:void(0);" title="">
+						<span>       24</span>
+						<span title="This link gives the references in this paper
+that have been resolved by our automated systems,
+with hot links to online versions of each paper
+where we have been able to locate them.">
+						References <i class="icon icon-gizmo-navigate-right"></i></span>
+						
+					</a>
+					
+					
+					
+					<a onclick="trackEventsArticle('../sol3/CiteReader_IN.cfm?abid=1363959&requesttimeout=90000', 'citations');" href="javascript:void(0);" title="">
+						<span>        2</span>
+						<span title="This link gives the references of papers
+that cite this paper that have been resolved
+by SSRNs automated systems,
+with hot links to online versions of each paper
+where we have been able to locate them.">
+						Citations <i class="icon icon-gizmo-navigate-right"></i></span>
+						
+					</a>
+					
+					
+					
+			</div>
+		
+	
+</div>
+
+				</div>
+				
+				<div class="row">
+					
+
+
+
+
+	
+		<div class="box-container box-related-journals">
+			<h2 class="section-title">Related eJournals</h2>
+			<ul class="quick-links">
+				
+					
+					
+
+					
+
+					
+						
+						
+
+						<li class="related-journal">
+							<p><a href="https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=1508951">Capital Markets: Asset Pricing & Valuation eJournal</a></p>
+							<div class="rj-btn-container">
+								<a onclick="trackEventsArticle('https://hq.ssrn.com/jourInvite.cfm?jourid=CMBO_1508951&abid=1363959', 'related-journal');" href="javascript:void(0);" class="btn-orange btn-follow">Follow</a>
+								<i class="icon icon-gizmo-information" aria-hidden="true"></i>
+
+								<div class="related-journals-tooltip">
+									<div class="tooltip-bg"></div>
+									<i class="icon icon-gizmo-delete" aria-label="Close Tooltip" role="button"></i>
+									<div class="tooltip-container">
+										<h4 class="rj-title">Capital Markets: Asset Pricing & Valuation eJournal</h4>
+										<p class="rj-description">
+											Subscribe to this fee journal for more curated articles on this topic
+										</p>
+										<div class="rj-statistics">
+											<div class="rj-followers">
+												<div class="rjs-title">
+													FOLLOWERS
+												</div>
+												<div class="rjs-description">
+													     1,791
+												</div>
+											</div>
+											<div class="rj-papers">
+												<div class="rjs-title">
+													PAPERS
+												</div>
+												<div class="rjs-description">
+													    24,095
+												</div>
+											</div>
+										</div>
+										
+											<div class="rj-information">
+												<div>This Journal is curated by:</div>
+												<div><b>G. William Schwert</b> at University of Rochester - Simon Business School</div>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</li>
+					
+
+					
+
+					
+				
+					
+					
+
+					
+
+					
+						
+						
+
+						<li class="related-journal">
+							<p><a href="https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=1504411">European Finance eJournal</a></p>
+							<div class="rj-btn-container">
+								<a onclick="trackEventsArticle('https://hq.ssrn.com/jourInvite.cfm?jourid=CMBO_1504411&abid=1363959', 'related-journal');" href="javascript:void(0);" class="btn-orange btn-follow">Follow</a>
+								<i class="icon icon-gizmo-information" aria-hidden="true"></i>
+
+								<div class="related-journals-tooltip">
+									<div class="tooltip-bg"></div>
+									<i class="icon icon-gizmo-delete" aria-label="Close Tooltip" role="button"></i>
+									<div class="tooltip-container">
+										<h4 class="rj-title">European Finance eJournal</h4>
+										<p class="rj-description">
+											Subscribe to this fee journal for more curated articles on this topic
+										</p>
+										<div class="rj-statistics">
+											<div class="rj-followers">
+												<div class="rjs-title">
+													FOLLOWERS
+												</div>
+												<div class="rjs-description">
+													     1,006
+												</div>
+											</div>
+											<div class="rj-papers">
+												<div class="rjs-title">
+													PAPERS
+												</div>
+												<div class="rjs-description">
+													    13,780
+												</div>
+											</div>
+										</div>
+										
+											<div class="rj-information">
+												<div>This Journal is curated by:</div>
+												<div><b>John A. Doukas</b> at Old Dominion University - Strome College of Business</div>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</li>
+					
+
+					
+
+					
+				
+					
+					
+
+					
+						<div class="more quick-links">
+					
+
+					
+						
+						
+
+						<li class="related-journal">
+							<p><a href="https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=1508744">International Finance eJournal</a></p>
+							<div class="rj-btn-container">
+								<a onclick="trackEventsArticle('https://hq.ssrn.com/jourInvite.cfm?jourid=CMBO_1508744&abid=1363959', 'related-journal');" href="javascript:void(0);" class="btn-orange btn-follow">Follow</a>
+								<i class="icon icon-gizmo-information" aria-hidden="true"></i>
+
+								<div class="related-journals-tooltip">
+									<div class="tooltip-bg"></div>
+									<i class="icon icon-gizmo-delete" aria-label="Close Tooltip" role="button"></i>
+									<div class="tooltip-container">
+										<h4 class="rj-title">International Finance eJournal</h4>
+										<p class="rj-description">
+											Subscribe to this fee journal for more curated articles on this topic
+										</p>
+										<div class="rj-statistics">
+											<div class="rj-followers">
+												<div class="rjs-title">
+													FOLLOWERS
+												</div>
+												<div class="rjs-description">
+													      601
+												</div>
+											</div>
+											<div class="rj-papers">
+												<div class="rjs-title">
+													PAPERS
+												</div>
+												<div class="rjs-description">
+													    21,057
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</li>
+					
+
+					
+						</div>
+						
+					
+
+					
+				
+			</ul>
+			
+				<a href="#" class="view-more" aria-label="View more" role="button"> <i class="icon icon-gizmo-navigate-right" aria-hidden="true"></i></a>
+			
+		</div>
+	
+
+<script>
+$(document).ready(function(){
+	if(navigator.appName == "Netscape" && navigator.appVersion.indexOf('Edge') > -1){
+		$('.related-journals-tooltip').css('top','32px');
+	}
+	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+		$('.related-journals-tooltip').css('right','5px');
+	}
+});
+</script>
+				</div>
+
+				<div class="row">
+					
+					
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<script language="javascript">
+		var times = 0; //  track the number of times the MORE link has been clicked (to avoid fraud)
+
+		// Track Recommendations appearances
+		function trackAppearances ()	{
+			times++; // to avoid fraud - we only track these the first time the additional recommendations are shown
+			var ab_id_source = '1363959';
+			var list_of_ab_id_target = '';
+			var initial_limit = '3';
+			var algorithm = '1';
+			var fraud = '0';
+
+			if (times == 1) {
+				$.ajax({
+					url: 'TrackRecommendationsAppearances.cfm?ab_id_source=' + ab_id_source + '&list_of_ab_id_target=' + list_of_ab_id_target + '&initial_limit=' + initial_limit + '&algorithm=' + algorithm + '&fraud=' + fraud,
+					cache: false,
+					success: function(data) {
+					}
+				});
+			}
+		}
+	</script>
+
+				</div>
+			</div>
+
+			<div class="feedback-tab-container">
+				<div class="feedback-tab" role="button" tabindex="0">
+					<span>Feedback</span>
+					<i class="icon icon-gizmo-comment" aria-hidden="true"></i>
+				</div>
+			</div>
+			
+
+<div id="feedbackModule" class="modal-wrapper">
+	<div class="modal-custom feedback">
+		<i class="icon-gizmo-delete modal-close" aria-label="Close modal" title="Close modal" role="button" tabindex="0"></i>
+		<div class="feedback-title">Feedback to SSRN</div>
+		<form name="formSuggestions" role="suggestions">
+			<div class="feedback-description">
+				<label for="txtFeedback">
+					<span class="feedback-label">Feedback</span>
+					<span class="feedback-required">&nbsp;(required)</span>
+				</label>
+				<textarea id="txtFeedback" name="txtFeedback" maxlength="1000" placeholder="(1,000 Characters Max)" required></textarea>
+			</div>
+			<div class="feedback-email">
+				<label for="txtEmail">
+					<span class="feedback-label">Email</span>
+					<span class="feedback-required">&nbsp;(required)</span>
+				</label>
+				<input type="email" id="txtEmail" name="txtEmail" value="" required>
+			</div>
+			<button class="btn-orange btn-add-to-cart feedback-submit">
+				Submit
+				<i class="icon-gizmo-navigate-right" aria-hidden="true"></i>
+			</button>
+		</form>
+		<div class="modal-divider"></div>
+		<div class="feedback-information">If you need immediate assistance, call 877-SSRNHelp (877 777 6435) in the United States, or +1 585 442 8170 outside of the United States, 8:30AM to 6:00PM U.S. Eastern, Monday - Friday.</div>
+	</div>
+</div>
+
+<script language="javascript" type="text/javascript">
+	
+		var strServer = "papers.ssrn.com";
+		var strSugPageName = "/sol3/papers.cfm";
+		var strIP = "94.192.183.21";
+		var strFullUrl = "papers%2Essrn%2Ecom%2Fsol3%2Fpapers%2Ecfm%3Fabstract%5Fid%3D1363959";
+		var sEmail = "";
+	
+</script>
+
+
+		</div>
+	</div>
+
+	
+	
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+  
+  
+
+	
+	
+		
+	
+
+
+	
+	
+		
+			
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+			
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+			
+		
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+
+
+
+
+
+
+	
+	
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+
+	<!-- includes piwik Trakcer -->
+	
+
+
+	 
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.ssrn.com/" : "http://piwik.ssrn.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+
+
+
+
+
+	piwikTracker.setCustomVariable(1, "User", "Unknown","visit");
+	piwikTracker.trackPageView();
+	piwikTracker.enableLinkTracking();
+
+} catch( err ) {}
+</script><noscript><p><img src="https://piwik.ssrn.com/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+	<!--Includesss footer -->
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+
+<nav class="footer-integration footer-redesigned ">
+	<div class="container">
+		<div class="row">
+			
+				<div class="footer-col">
+					<a href="https://hq.ssrn.com/submissions/CreateNewAbstract.cfm" class="btn-blue-outline-third submit-paper-btn">
+						Submit a Paper
+						<i class="icon icon-gizmo-navigate-right" aria-hidden="true"></i>
+					</a>
+					<a class="section-508-link" href="https://www.ssrn.com/en/index.cfm/section-508/">Section 508 Text Only Pages</a>
+				</div>
+			
+			<div class="footer-col">
+				<h4 data-toggle="collapse">SSRN Quick Links <i class="icon-gizmo-navigate-down" aria-hidden="true"></i></h4>
+				<ul class="footer-links collapsable">
+					<li><a href="https://ssrnsolutions.com/" target="_blank">SSRN Solutions</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/rps/">Research Paper Series</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/conferences/">Conference Papers</a></li>
+					<li><a href="https://papers.ssrn.com/sol3/DisplayPipPublishers.cfm">Partners in Publishing</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/Announcements-Jobs/">Jobs &amp; Announcements</a></li>
+					<li><a target="_blank" href="https://communications.elsevier.com/webApp/els_doubleOptInWA?do=0&srv=els_SSRN&sid=153&uif=0&uvis=3">Newsletter Sign Up</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 data-toggle="collapse">SSRN Rankings <i class="icon-gizmo-navigate-down" aria-hidden="true"></i></h4>
+				<ul class="footer-links collapsable">
+					<li><a href="https://hq.ssrn.com/rankings/Ranking_display.cfm?TRN_gID=10">Top Papers</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/top-authors/">Top Authors</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/top-organizations/">Top Organizations</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 data-toggle="collapse">About SSRN <i class="icon-gizmo-navigate-down" aria-hidden="true"></i></h4>
+				<ul class="footer-links collapsable">
+					<li><a href="https://www.ssrn.com/en/index.cfm/ssrns-objectives/">SSRN Objectives</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/network-directors/">Network Directors</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/presidents-letter/">Presidential Letter</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/recent-announcements/">Announcements</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/contactus/">Contact us</a></li>
+					<li><a href="https://www.ssrn.com/en/index.cfm/ssrn-faq/">FAQs</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<ul class="footer-social-links">
+			<li><a target="_blank" href="https://www.facebook.com/SSRNcommunity/" aria-label="Facebook" role="link"><i class="icon icon-social-facebook" aria-hidden="true"></i></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/company/493409?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_493409%2Cidx%3A0" aria-label="Linkedin" role="link"><i class="icon icon-social-linkedin" aria-hidden="true"></i></a></li>
+			<li><a target="_blank" href="https://twitter.com/SSRN" aria-label="Twitter" role="link"><i class="icon icon-social-twitter" aria-hidden="true"></i></a></li>
+			<li style="display:none;"><a target="_blank" href="javascript:void(0);" role="button"><i class="icon icon-social-googleplus" aria-hidden="true"></i></a></li>
+		</ul>
+		<div class="footer-elsevier">
+			<div class="footer-left">
+				<a class="logo-elsevier" target="_blank" href="https://www.elsevier.com/">
+					<img src="https://static.ssrn.com/cfincludes/img/elsevier-logo.png" alt="Elsevier logo">
+				</a>
+			</div>
+			<div class="footer-left">
+				<div class="footer-links">
+					<a href="https://www.ssrn.com/en/index.cfm/dmca-notice-policy/">Copyright</a>
+					<a href="https://www.ssrn.com/en/index.cfm/terms-of-use/">Terms and Conditions</a>
+					<a href="https://www.elsevier.com/legal/privacy-policy" target="_blank">Privacy Policy</a>
+				</div>
+				<div class="footer-text">
+					<p>Cookies are used by this site. To decline or learn more, visit <a href="https://www.ssrn.com/en/index.cfm/ssrn-faq/#cookies">our Cookies page</a>.
+					<span class="icon-gizmo-lightning alwaysshowme">
+						<span class="tooltip top" role="tooltip">
+							<span class="tooltip-arrow"></span>
+							<span class="tooltip-inner">This page was processed by apollobot1 in <span id="serverTime">  0.203</span> seconds <span id="loadingtime"></span></span>
+						</span>
+					</span>
+					</p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<a class="logo-relx" target="_blank" href="http://www.relx.com/">
+					<img src="https://static.ssrn.com/cfincludes/img/relax-logo.png" alt="Relx Group logo">
+				</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<!--END FOOTER-->
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<a href="https://papers.ssrn.com/sol3/updateInformationLog.cfm?process=true"><img src="header/pixel.gif" border="0" alt=" " width="1" height="1"></a>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://static.ssrn.com/cfincludes/generic-toastr/generic-toastr.js"></script>
+	<script src="https://static.ssrn.com/cfincludes/copy2clipboard/copy2clipboard.js"></script>
+	<script src="https://static.ssrn.com/cfincludes/feedback-module/feedback-module.js"></script>
+	<script src="https://papers.ssrn.com/sol3/Scripts/versions-groups.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="Scripts/papers.js" type="text/javascript"></script>
+	<script type="text/javascript" src="//d39af2mgp1pqhg.cloudfront.net/widget-popup.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+</html>
