@@ -1,5 +1,10 @@
 # MCMC-estimation-of-Stochastic-Differential-Equations-Papers
+<<<<<<< HEAD
 A list of papers tackling the Bayesian estimation of Ito processes (or their discrete time version).
+=======
+
+A list of papers tackling the Bayesian estimation of Ito processes
+>>>>>>> 1067a017df01200266f3dfdfae7fc5b158d636d7
 
 
 ## Econometrics
