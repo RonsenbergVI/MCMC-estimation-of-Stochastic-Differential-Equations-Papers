@@ -43,3 +43,11 @@ A list of papers tackling the Bayesian estimation of Ito processes (or their dis
 - **Bayesian Filtering for Jump-Diffusions with Applications to Stochastic Volatility**, Andrew Golightly (2007). [[pdf]](http://people.bordeaux.inria.fr/pierre.delmoral/bayesian-filtering-volatility-G.pdf)
 
 - **Estimating the Parameters of Stochastic Volatility Models using Option Price Data**, A. S. Hurn, K. A. Lindsay and A. J. McClelland (). [[pdf]](http://www.ncer.edu.au/papers/documents/WP87.pdf).
+
+
+# Requirements
+
+These requirements reflect the testing environment.  It is possible
+that the download script will work with older versions.
+
+* Python (3+)
