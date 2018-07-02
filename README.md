@@ -2,6 +2,14 @@
 
 A list of papers tackling the Bayesian estimation of Ito processes (or their discrete time version).
 
+To download the papers referenced here you need to execute the following commands:
+
+```shell
+git clone https://github.com/RonsenbergVI/MCMC-estimation-of-Stochastic-Differential-Equations-Papers.git
+cd MCMC-estimation-of-Stochastic-Differential-Equations-Papers
+sh run.sh
+```
+
 ## Econometrics
 
 - **MCMC Methods for Continuous-Time Financial Econometrics**, Johannes, M., and Polson, N. (2003). [[pdf]](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.335.5232&rep=rep1&type=pdf).
